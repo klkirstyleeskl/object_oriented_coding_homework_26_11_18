@@ -1,3 +1,12 @@
-class Student
+class StudentInformation
+attr_reader :name, :cohort
+attr_writer :name, :cohort
 
-end 
+def initialize(name, cohort)
+  @name = name
+  @cohort = cohort
+end
+
+
+
+end
