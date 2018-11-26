@@ -29,8 +29,11 @@ def test_player_in_array__not_found
     assert_equal(false, result)
 end
 
-
-
+def test_team_win_or_lose__win
+    sports = Sports.new('Rangers',["Steve", "Del","Frank"],"Coach Jimmy")
+    result = sports.team_win_or_lose('win')
+    assert_equal(1,result)
+end
 
 
 
